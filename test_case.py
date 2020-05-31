@@ -1,13 +1,14 @@
-
-# # dic = dict([[1, 0], [2, 0], [3, 1], [3, 2]])
-# # print(dic)
-# s = "c*"
-# res = s.split('*')
-# print(res)
-# res.pop()
-# print(res)
-
-
-print("0 or 1" , 0 or 1)
-print("-9 or 1" , -9 or 1)
-print("5 or 1" , 5 or 1)
+# def findDuplicate(nums):
+#
+#     sid = 0
+#     while (1) :
+#         num = nums[sid]
+#         if num == nums[num]:
+#             return num
+#         nums[sid],nums[num] = nums[num],nums[sid]
+#
+#     return -1
+#
+# if __name__ == '__main__':
+#     print(findDuplicate([1,3,4, 5,7,7]))
+print(6%-6)

@@ -7,7 +7,7 @@ def findOrder(numCourses, prerequisites):
         condiction[cur].append(pre)
 
     def dsf(i):
-        if visited[i] != 0:
+        if visited[i] is not None:
             return visited[i]
         visited[i] = False
         for j in condiction[i]:

@@ -1,9 +1,12 @@
 def isMatch( s: str, p: str) -> bool:
     ls, lp = len(s), len(p)
+    # 初始化动态表
     dp = [[False for _ in range(lp + 1)] for _ in range(ls + 1)]
     dp[0][0] = True
+    # 动态检查的前置条件
     for j in range(2, lp + 1):
         dp[0][j] = dp[0][j - 2] and p[j - 1] == '*'
+
     for i in range(1, ls + 1):
         for j in range(1, lp + 1):
             m, n = i - 1, j - 1
